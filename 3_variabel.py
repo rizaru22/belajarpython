@@ -1,8 +1,5 @@
-panjang=6
-lebar=5
-hasil=panjang*lebar
-print(hasil)
+A=4 #integer
+B=7.3 #float
 
-print(7+3)
-print(10-2)
-print(9/2)
+C=A+B
+print("Nilai C=",C)

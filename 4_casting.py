@@ -7,3 +7,6 @@ print("Nilai a =",a,"Tipe Datanya adalah",type(a))
 
 b=str(phi)
 print("Nilai b =",b,"Tipe Datanya adalah",type(b))
+c=4
+d=c+b
+print("Nilai d =",d,"Tipe Datanya adalah",type(d))

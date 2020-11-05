@@ -1,6 +1,6 @@
 list1=['Andi','Budi','Chandra','Deni','Evi']
-# for x in list1:
-#     print(x)
+for x in list1:
+print(x)
 
 
 # a=len(list1)
@@ -10,5 +10,6 @@ list1=['Andi','Budi','Chandra','Deni','Evi']
 #     print(list1[i])
 #     i+=1
 
-list1.append("Fandi")
-print(list1)
+# list1.append("Fandi")
+# print(list1)
+
