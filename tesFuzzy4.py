@@ -12,17 +12,17 @@ nilaiUN.automf(3)
 pendapatan['poor']=fuzz.trapmf(pendapatan.universe,[0,0,5,15])
 pendapatan['average']=fuzz.trimf(pendapatan.universe,[10,20,30])
 pendapatan['good']=fuzz.trapmf(pendapatan.universe,[25,35,50,50])
-# pendapatan.view()
+pendapatan.view()
 
 
 nilaiUN['poor']=fuzz.trapmf(nilaiUN.universe,[0,0,4,6])
 nilaiUN['average']=fuzz.trimf(nilaiUN.universe,[5,6,8])
 nilaiUN['good']=fuzz.trapmf(nilaiUN.universe,[7,9,10,10])
-# nilaiUN.view()
+nilaiUN.view()
 
 kelayakan['low']=fuzz.trapmf(kelayakan.universe,[0,0,20,70])
 kelayakan['high']=fuzz.trapmf(kelayakan.universe,[50,90,100,100])
-# kelayakan.view()
+kelayakan.view()
 
 rule1=ctrl.Rule(pendapatan['poor']&nilaiUN['good'],kelayakan['high'])
 rule2=ctrl.Rule(pendapatan['average']&nilaiUN['good'],kelayakan['high'])
@@ -45,3 +45,9 @@ kelayakanA.compute()
 print(kelayakanA.output['kelayakan'])
 kelayakan.view(sim=kelayakanA)
 a=str(input("Masukkan a:"))
+
+# NumPy >= 1.6
+# SciPy >= 0.9
+# NetworkX >= 1.9
+# matplotlib
+# scikit

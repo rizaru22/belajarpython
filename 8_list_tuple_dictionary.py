@@ -6,7 +6,7 @@ for x in list1:
     print(x)
 
 tuple1=('Apel','Mangga','Jeruk','Kiwi')
-tuple1[0]='Buah Naga'
+# tuple1[0]='Buah Naga'
 for y in tuple1:
     print(y)
 
